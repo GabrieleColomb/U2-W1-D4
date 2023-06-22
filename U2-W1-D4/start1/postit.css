@@ -1,0 +1,102 @@
+body {
+    background-color: grey; 
+  }
+
+.post-it {
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 24px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 9px 9px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .post-it h1 {
+    margin-bottom: 5%;
+    padding-top: 20%;
+    font-size: 40px;
+    font-weight: bold; 
+  }
+
+  .container {
+    text-align: center;
+    margin-top: 90px;
+  }
+
+  .column {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px; 
+  }
+
+  .post-it.yellow {
+    transform: rotate(-5deg);
+  }
+  
+  .post-it.green {
+    transform: rotate(5deg);
+  }
+  
+  .post-it.blue {
+    transform: rotate(-2deg);
+  } 
+  
+  .yellow {
+    background-color: #dddf72;
+  }
+  
+  .green {
+    background-color: #72c484;
+  }
+  
+  .blue {
+    background-color: #b2bedc;
+  }  
+  
+  #post-it-1:hover {
+    transform: scale(1.1) rotate(0deg);
+  }
+
+  #post-it-2:hover {
+    transform: scale(1.1) rotate(0deg);
+  }
+
+  #post-it-3:hover {
+    transform: scale(1.1) rotate(0deg);
+  }
+
+  #post-it-4:hover {
+    transform: scale(1.1) rotate(0deg);
+  }
+
+  #post-it-5:hover {
+    transform: scale(1.1) rotate(0deg);
+  }
+
+  #post-it-6:hover {
+    transform: scale(1.1) rotate(0deg);
+  }
+
+  #post-it-7:hover {
+    transform: scale(1.1) rotate(0deg);
+  }
+
+  #post-it-8:hover {
+    transform: scale(1.1) rotate(0deg);
+  }
+
+  @media (min-width: 1200px) {
+    .post-it:hover {                       /*non capisco perchè quando allargo lo schermo debba cliccare sopra per fare l'animazione*/
+      transform: scale(1.1) rotate(0deg);  /*invece schermo normale funziona*/
+    }
+  }
